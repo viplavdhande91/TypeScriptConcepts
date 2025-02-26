@@ -1,0 +1,17 @@
+"use strict";
+// undefined VS null
+function display(value) {
+    if (typeof value === "string") {
+        console.log("User provided value");
+        console.log(value);
+    }
+    else if (typeof value === "undefined") {
+        console.log("User forgot to give value may be");
+    }
+    else if (value === null) {
+        console.log("User don't want to display anything");
+    }
+}
+var value;
+value = null;
+display(value);
